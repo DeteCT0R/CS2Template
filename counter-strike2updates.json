@@ -142,5 +142,15 @@
     "UpdateSourceConditionSetting": "installSwiftlyS2",
     "UpdateSourceConditionValue": "true",
     "SkipOnFailure": false
+  },
+  {
+    "UpdateStageName": "Activate SwiftlyS2",
+    "UpdateSourcePlatform": "Linux",
+    "UpdateSource": "Executable",
+    "UpdateSourceData": "/bin/bash",
+    "UpdateSourceArgs": "-c \"sed -i \\\"/^\\s*Game\\s*csgo\\s*$/ { s//\\t\\t\\tGame\\tcsgo\\/addons\\/swiftlys2\\n&/ }\\\" counter-strike2/730/game/csgo/gameinfo.gi\"",
+    "UpdateSourceConditionSetting": "installSwiftlyS2",
+    "UpdateSourceConditionValue": "true",
+    "SkipOnFailure": false
   }
 ]
