@@ -131,5 +131,16 @@
     "UpdateSourceConditionSetting": "installSwiftlyS2",
     "UpdateSourceConditionValue": "true",
     "DeleteAfterExtract": true
+  },
+  {
+    "UpdateStageName": "Move SwiftlyS2 Files",
+    "UpdateSourcePlatform": "Linux",
+    "UpdateSource": "Executable",
+    "UpdateSourceData": "bash",
+    "UpdateSourceArgs": "-c \"mv {{$FullBaseDir}}game/csgo/swiftlys2-linux-*-with-runtimes/* {{$FullBaseDir}}game/csgo/ && rm -rf {{$FullBaseDir}}game/csgo/swiftlys2-linux-*-with-runtimes\"",
+    "UpdateSourceTarget": "{{$FullBaseDir}}game/csgo",
+    "UpdateSourceConditionSetting": "installSwiftlyS2",
+    "UpdateSourceConditionValue": "true",
+    "SkipOnFailure": false
   }
 ]
