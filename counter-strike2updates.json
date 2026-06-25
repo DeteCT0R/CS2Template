@@ -137,8 +137,7 @@
     "UpdateSourcePlatform": "Linux",
     "UpdateSource": "Executable",
     "UpdateSourceData": "bash",
-    "UpdateSourceArgs": "-c \"mv {{$FullBaseDir}}game/csgo/swiftlys2-linux-*-with-runtimes/* {{$FullBaseDir}}game/csgo/ && rm -rf {{$FullBaseDir}}game/csgo/swiftlys2-linux-*-with-runtimes\"",
-    "UpdateSourceTarget": "{{$FullBaseDir}}game/csgo",
+    "UpdateSourceArgs": "-c \"cp -rf {{$FullBaseDir}}game/csgo/swiftlys2-linux-*-with-runtimes/* {{$FullBaseDir}}game/csgo/ && rm -rf {{$FullBaseDir}}game/csgo/swiftlys2-linux-*-with-runtimes\""    "UpdateSourceTarget": "{{$FullBaseDir}}game/csgo",
     "UpdateSourceConditionSetting": "installSwiftlyS2",
     "UpdateSourceConditionValue": "true",
     "SkipOnFailure": false
